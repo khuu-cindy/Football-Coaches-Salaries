@@ -3,8 +3,11 @@
 ## High Level Overview 
 
 I was provided with footbal coaches data that included salary and school information. I acquired additional data such as football players graduation rates from 2006 Cohort, recorded wins from all historical played games, and stadium size capacity for each school by webscraping using Python. 
-* Coaches Data: includes football coaches' salaries, bonuses, school, team
-* 
+* Coaches Data: includes football coaches' salaries, bonuses, school, team, buyout, assistant pay
+* Graduation Rates: obtained 2006 Cohort data from https://web3.ncaa.org/aprsearch/gsrsearch by entering search criteria and saving html to local drive for access
+* Recorded Wins: obtained from Wikipedia https://en.wikipedia.org/wiki/NCAA_Division_I_FBS_football_win-loss_records
+* Stadium Size: obtained from Wikipedia http://en.wikipedia.org/wiki/List_of_American_football_stadiums_by_capacity 
+* Team Names: obtained list of team names as different sites had different spelling conventions from Wikipedia https://en.wikipedia.org/wiki/List_of_NCAA_Division_I_FBS_football_programs
 
 After acquiring the supporting data and combining it with the coaches dataset, I analyzed if there were any patterns amongst the variables with a football coaches' salary. Since we were only interested in the salary not including bonuses, I only used TotalPay variable and did not consider adding in the bonus metrics. Therefore, in the regression models, I used TotalPay as the output variable when testing different sets of input variables to find the best model. 
 
